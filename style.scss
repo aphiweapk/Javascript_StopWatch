@@ -1,0 +1,49 @@
+em, i , span, div{
+  font-style: normal;
+  font-size: 48px;
+  color: #B18338;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./background.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .btn {
+    margin-top: .5em;
+    display: flex;
+    gap: 10px;
+    
+    button {
+      padding: 10px;
+      font-size: .4em;
+      width: 100px;
+      border: none;
+      box-shadow: 0px 0px 5px grey;
+      color: #B18338;
+
+      &:hover {
+        background-color: #B18338;
+        color: white;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    flex-direction: column;
+  }
+}
