@@ -39,6 +39,8 @@ let seconds = document.querySelector("i");
 
       // reset button
       btn[2].addEventListener("click", () => {
+        minutes.innerText = 0;
+        hours.innerText = 0;
         seconds.innerText = 0;
         cInterval();
         btn[0].addEventListener("click", click);
